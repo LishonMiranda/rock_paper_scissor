@@ -1,0 +1,43 @@
+  img {
+            
+            border-radius: 10em;
+            cursor: pointer;
+            background-color:greenyellow;
+            border: 10px black 
+        }
+
+.image {
+            padding: 2em;
+            margin: 1em;
+            box-shadow: 20px 20px 30px;
+        }
+
+
+body{
+    color: black;
+    background-color: white;
+}
+button:hover{
+    color: black;
+    background-color: cadetblue;
+}
+button:active{
+    color: rgb(29, 255, 4);
+}
+p{
+    font: bold 1.5em Calibri;
+    color: rgb(141, 0, 0);
+    
+}
+.moving-icon{
+    height: 75px;
+    width: 75px;
+    background-color: transparent;
+}
+button{
+    color:blueviolet;
+    background-color: antiquewhite;
+    padding: 20px 25px;
+    border-radius: 2em;
+    font: bold 1em Calibri;
+}

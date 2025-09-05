@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Rock, Paper, Scissors</title>
+</head>
+<link rel="stylesheet" href="rock_paper_scissors.css">
+<body>
+    <h1 id="heading">Rock, Paper Scissors: </h1><br>
+    <img src="rock-emoji.png"
+        onclick="b = 'rock'; 
+                    rockPaperScissors();" height="100px" width="100px" class="image"> <!-- Rock -->
+    <img src="paper-emoji.png"
+        onclick="b = 'paper';
+                rockPaperScissors();" height="100px" width="100px" class="image"> <!-- paper -->
+    <img src="scissors-emoji.png"
+        onclick="b = 'scissor';
+                rockPaperScissors();" height="100px" width="100px" class="image">
+    <p>
+        <button onclick="yourScore=0; compScore=0;
+        document.querySelector('.scoreSection').innerHTML = `Your score is ${yourScore} \nComputer's score is ${compScore}`;
+        document.querySelector('#wonOrLost').innerHTML = '';
+        localStorage.removeItem('scoreCard');
+        document.querySelector('#choice').innerHTML = ''
+        ">
+            Reset</button>
+    </p>
+    <p id="wonOrLost"></p>
+    <p id="choice"></p>
+    <p class="scoreSection"></p>
+</body>
+<script src="11_rock_paper_scissors.js"></script>
+
+</html>
